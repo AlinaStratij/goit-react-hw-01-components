@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/AlinaStratij/goit-react-hw-01-components/static/css/main.7acaea2f.css",
-    "main.js": "/AlinaStratij/goit-react-hw-01-components/static/js/main.c0f0c092.js",
+    "main.css": "/AlinaStratij/goit-react-hw-01-components/static/css/main.be7a1785.css",
+    "main.js": "/AlinaStratij/goit-react-hw-01-components/static/js/main.a64496d4.js",
     "index.html": "/AlinaStratij/goit-react-hw-01-components/index.html",
-    "main.7acaea2f.css.map": "/AlinaStratij/goit-react-hw-01-components/static/css/main.7acaea2f.css.map",
-    "main.c0f0c092.js.map": "/AlinaStratij/goit-react-hw-01-components/static/js/main.c0f0c092.js.map"
+    "main.be7a1785.css.map": "/AlinaStratij/goit-react-hw-01-components/static/css/main.be7a1785.css.map",
+    "main.a64496d4.js.map": "/AlinaStratij/goit-react-hw-01-components/static/js/main.a64496d4.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.c0f0c092.js"
+    "static/css/main.be7a1785.css",
+    "static/js/main.a64496d4.js"
   ]
 }
