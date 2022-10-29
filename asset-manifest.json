@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/AlinaStratij/goit-react-hw-01-components/static/css/main.7acaea2f.css",
-    "main.js": "/AlinaStratij/goit-react-hw-01-components/static/js/main.07d3183d.js",
+    "main.js": "/AlinaStratij/goit-react-hw-01-components/static/js/main.c0f0c092.js",
     "index.html": "/AlinaStratij/goit-react-hw-01-components/index.html",
     "main.7acaea2f.css.map": "/AlinaStratij/goit-react-hw-01-components/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/AlinaStratij/goit-react-hw-01-components/static/js/main.07d3183d.js.map"
+    "main.c0f0c092.js.map": "/AlinaStratij/goit-react-hw-01-components/static/js/main.c0f0c092.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/js/main.c0f0c092.js"
   ]
 }
