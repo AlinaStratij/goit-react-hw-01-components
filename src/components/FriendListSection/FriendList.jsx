@@ -13,6 +13,12 @@ export default function FriendList({ friends }) {
   );
 }
 FriendList.propTypes = {
-  // Прописати пропс для масива обєктів
-  friends: PropTypes.array,
+  friends: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.number.isRequired,
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool,
+    })
+  ),
 };

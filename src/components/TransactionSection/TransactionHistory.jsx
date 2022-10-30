@@ -1,6 +1,7 @@
+import PropTypes from 'prop-types';
 export default function TransactionHistory({ items }) {
   return (
-    <table class="transaction-history">
+    <table className="transaction-history">
       <thead>
         <tr>
           <th>Type</th>
@@ -10,7 +11,7 @@ export default function TransactionHistory({ items }) {
       </thead>
       <tbody>
         {items.map(item => (
-          <tr>
+          <tr key={item.id}>
             <td>{item.type}</td>
             <td>{item.amount}</td>
             <td>{item.currency}</td>
@@ -20,3 +21,13 @@ export default function TransactionHistory({ items }) {
     </table>
   );
 }
+TransactionHistory.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+    })
+  ),
+};

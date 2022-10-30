@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 export default function FriendListItem(props) {
   return (
     <div>
@@ -8,7 +7,3 @@ export default function FriendListItem(props) {
     </div>
   );
 }
-FriendListItem.propTypes = {
-  avatar: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-};
