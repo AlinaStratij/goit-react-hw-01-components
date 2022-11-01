@@ -7,10 +7,11 @@ import data from 'information/data.json';
 import friends from 'information/friends.json';
 import TransactionHistory from 'components/TransactionSection/TransactionHistory';
 import transactions from 'information/transactions.json';
+import { AppWrapper } from 'components/AppBox/App.styled';
 
 export default function App() {
   return (
-    <div>
+    <AppWrapper>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -19,8 +20,8 @@ export default function App() {
         stats={user.stats}
       />
       <Statistics title="Upload stats" stats={data} />
-      <FriendList friends={friends} />;
-      <TransactionHistory items={transactions} />;
-    </div>
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
+    </AppWrapper>
   );
 }

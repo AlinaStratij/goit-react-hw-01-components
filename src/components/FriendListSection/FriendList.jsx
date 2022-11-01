@@ -1,15 +1,18 @@
 import PropTypes from 'prop-types';
+import { FriendListWrapper } from 'components/FriendListSection/FriendList.styled';
 
 import FriendListItem from 'components/FriendListSection/FriendListItem';
 export default function FriendList({ friends }) {
   return (
-    <ul className="friend-list">
+    <FriendListWrapper>
       {friends.map(friend => (
-        <li key={friend.id} className="item">
-          <FriendListItem avatar={friend.avatar} name={friend.name} />
-        </li>
+        <FriendListItem
+          avatar={friend.avatar}
+          name={friend.name}
+          isOnline={friend.isOnline}
+        />
       ))}
-    </ul>
+    </FriendListWrapper>
   );
 }
 FriendList.propTypes = {

@@ -1,31 +1,39 @@
 import PropTypes from 'prop-types';
-import css from '../ProfileSection/Profile.module.css';
+import {
+  ProfileWrapper,
+  ProfileDescription,
+  TextWrapper,
+  ProfileImg,
+  ProfileList,
+  ProfileItem,
+  SpanText,
+  SpanValue,
+} from 'components/ProfileSection/Profile.styled';
 
 export default function Profile({ avatar, username, tag, location, stats }) {
   return (
-    <div className={css.profile}>
-      <div className={css.description}>
-        <img src={avatar} alt="User avatar" className={css.avatar} />
-        <p className="name">{username}</p>
-        <p className="tag">{tag}</p>
-        <p className="location">{location}</p>
-      </div>
-
-      <ul className={css.stats}>
-        <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{stats.followers}</span>
-        </li>
-        <li>
-          <span className="label">Views</span>
-          <span className="quantity">{stats.views}</span>
-        </li>
-        <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{stats.likes}</span>
-        </li>
-      </ul>
-    </div>
+    <ProfileWrapper>
+      <ProfileDescription>
+        <ProfileImg src={avatar} alt="User avatar" className="avatar" />
+        <TextWrapper>{username}</TextWrapper>
+        <TextWrapper>@{tag}</TextWrapper>
+        <TextWrapper>{location}</TextWrapper>
+      </ProfileDescription>
+      <ProfileList>
+        <ProfileItem>
+          <SpanText>Followers</SpanText>
+          <SpanValue> {stats.followers} </SpanValue>
+        </ProfileItem>
+        <ProfileItem>
+          <SpanText>Views</SpanText>
+          <SpanValue> {stats.views} </SpanValue>
+        </ProfileItem>
+        <ProfileItem>
+          <SpanText>Likes</SpanText>
+          <SpanValue> {stats.likes} </SpanValue>
+        </ProfileItem>
+      </ProfileList>
+    </ProfileWrapper>
   );
 }
 Profile.propTypes = {
@@ -34,5 +42,4 @@ Profile.propTypes = {
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   stats: PropTypes.objectOf(PropTypes.number),
-  // в консолі видає попередження
 };
