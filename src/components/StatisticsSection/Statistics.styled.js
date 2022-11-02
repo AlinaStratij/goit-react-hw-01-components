@@ -13,18 +13,39 @@ export const StatisticsTitle = styled.h2`
 export const StatisticsList = styled.ul`
   display: flex;
   list-style: none;
-  background-color: rgb(180, 178, 178);
+  background-color: white;
   justify-content: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 15px 0 15px 0;
+`;
+export const StatisticsItem = styled.li`
+  background-color: ${props => {
+    if (props.label === '.docx') {
+      return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+    }
+    if (props.label === `.pdf`) {
+      return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+    }
+    if (props.label === `.mp3`) {
+      return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+    }
+    if (props.label === `.psd`) {
+      return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+    }
+  }};
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 `;
 export const SpanLabel = styled.span`
-  color: white;
-  margin-right: 35px;
+  color: space;
+  color: black;
 `;
 export const SpanPercentage = styled.span`
   font-size: 20px;
   font-weight: 700;
-  color: white;
+  color: space;
+  color: black;
   display: flex;
 `;

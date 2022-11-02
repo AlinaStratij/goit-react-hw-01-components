@@ -1,14 +1,16 @@
 import {
-  FriendListItemWrapper,
-  FriendListItemsStatus,
-  FriendListItemsName,
+  FriendListItemsWrapper,
+  FriendListItemStatus,
+  FriendListItemName,
 } from 'components/FriendListSection/FriendListItems.styled';
 export default function FriendListItem(items) {
   return (
-    <FriendListItemWrapper key={items.id}>
-      <FriendListItemsStatus>{items.isOnline}</FriendListItemsStatus>
+    <FriendListItemsWrapper>
+      <FriendListItemStatus isOnline={items.isOnline}>
+        {items.isOnline}
+      </FriendListItemStatus>
       <img className="avatar" src={items.avatar} alt="User avatar" width="60" />
-      <FriendListItemsName>{items.name}</FriendListItemsName>
-    </FriendListItemWrapper>
+      <FriendListItemName>{items.name}</FriendListItemName>
+    </FriendListItemsWrapper>
   );
 }

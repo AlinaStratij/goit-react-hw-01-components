@@ -3,6 +3,7 @@ import {
   StatisticsWrapper,
   StatisticsTitle,
   StatisticsList,
+  StatisticsItem,
   SpanLabel,
   SpanPercentage,
 } from 'components/StatisticsSection/Statistics.styled';
@@ -10,13 +11,13 @@ import {
 export default function Statistics({ title, stats }) {
   return (
     <StatisticsWrapper>
-      <StatisticsTitle>{title}</StatisticsTitle>
+      {title && <StatisticsTitle>{title}</StatisticsTitle>}
       <StatisticsList>
         {stats.map(stat => (
-          <li key={stat.id} className="item">
+          <StatisticsItem key={stat.id} label={stat.label}>
             <SpanLabel>{stat.label}</SpanLabel>
             <SpanPercentage>{stat.percentage}%</SpanPercentage>
-          </li>
+          </StatisticsItem>
         ))}
       </StatisticsList>
     </StatisticsWrapper>
