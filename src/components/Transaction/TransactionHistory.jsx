@@ -5,7 +5,7 @@ import {
   TableThead,
   Tablebody,
   TableRow,
-} from 'components/TransactionSection/TransactionHistory.styled';
+} from 'components/Transaction/TransactionHistory.styled';
 
 export default function TransactionHistory({ items }) {
   return (

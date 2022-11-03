@@ -2,7 +2,8 @@ import {
   FriendListItemsWrapper,
   FriendListItemStatus,
   FriendListItemName,
-} from 'components/FriendListSection/FriendListItems.styled';
+} from 'components/FriendList/FriendListItems.styled';
+
 export default function FriendListItem(items) {
   return (
     <FriendListItemsWrapper>

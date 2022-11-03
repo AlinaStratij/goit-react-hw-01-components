@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+
 import {
   ProfileWrapper,
   ProfileDescription,
@@ -8,7 +9,7 @@ import {
   ProfileItem,
   SpanText,
   SpanValue,
-} from 'components/ProfileSection/Profile.styled';
+} from 'components/Profile/Profile.styled';
 
 export default function Profile({ avatar, username, tag, location, stats }) {
   return (
@@ -36,6 +37,7 @@ export default function Profile({ avatar, username, tag, location, stats }) {
     </ProfileWrapper>
   );
 }
+
 Profile.propTypes = {
   avatar: PropTypes.string.isRequired,
   username: PropTypes.string.isRequired,

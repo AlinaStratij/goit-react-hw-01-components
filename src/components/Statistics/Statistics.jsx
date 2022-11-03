@@ -6,7 +6,7 @@ import {
   StatisticsItem,
   SpanLabel,
   SpanPercentage,
-} from 'components/StatisticsSection/Statistics.styled';
+} from 'components/Statistics/Statistics.styled';
 
 export default function Statistics({ title, stats }) {
   return (

@@ -1,4 +1,6 @@
 import styled from '@emotion/styled';
+
+
 export const TransactionHistoryTable = styled.table`
   border-radius: 5px;
   font-size: 18px;

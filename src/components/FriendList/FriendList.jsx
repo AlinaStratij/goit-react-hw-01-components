@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types';
-import { FriendListWrapper } from 'components/FriendListSection/FriendList.styled';
 
-import FriendListItem from 'components/FriendListSection/FriendListItem';
+import FriendListItem from 'components/FriendList/FriendListItem';
+
+import { FriendListWrapper } from 'components/FriendList/FriendList.styled';
+
 export default function FriendList({ friends }) {
   return (
     <FriendListWrapper>
